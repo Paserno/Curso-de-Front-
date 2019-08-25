@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -12,6 +13,7 @@
         body{
             margin: 0;
             background-color: #59d4e8;
+            font-family: 'Indie Flower', cursive;
         }
     .header{
         background-color:#39bdc8; 
@@ -19,6 +21,7 @@
         height: 80px;
         display:flex;
         justify-content: space-between;
+        align-items: center; 
         
     }
     .header__img{
@@ -26,14 +29,10 @@
         margin-top: 10px;
         margin-left: 10px;
     }
-    .header__img--menu{
-        width: 50px;
-        height: 50px;
-        margin-top: 10px;
-        margin-left: 10px;
-    }
+   
     .header__menu{
         margin-right: 30px;
+        
     }
     .header__menu ul{
         display: none; /*---------AQUI ME AYUDA A DESAPARECER EL DISPLEY*/
@@ -48,16 +47,39 @@
         display: block;
     }
     /*----------------------------------------------------------------*/
+    .header__menu li{
+        margin: 10px, 0px;
+    }
+    .header__menu li a{
+        color: white;
+       text-decoration: none; /* elimina la linea debajo */
+    }
+    .header__menu li a:hover{
+        text-decoration:  underline;
+
+    }
+
     .header__menu--perfil{
         margin-right: 8px;
-        width: 40px;
+        
+        display: flex;
+        align-items: center;
+    }
+    .header__menu--perfil img{
+       margin-right: 8px;
+       width:40px;
+
+    }
+    .header__menu--perfil p{
+       margin:0px;
+       color: white;
     }
     </style>
     <header class="header">
         <img class="header__img" src="https://raw.githubusercontent.com/platzi/PlatziVideo/feature/react/src/assets/static/logo-platzi-video-BW2.png" alt="">
     <div class="header__menu">
         <div class="header__menu--perfil">
-            <img class="header__img--menu" src="./User2.png" alt="User">
+            <img  src="./User2.png" alt="User">
             <p>Perfil</p>
         </div>
         <ul>
