@@ -3,6 +3,15 @@ body{
  /*  background: linear-gradient(#59d4e8,#59d4e8,#caa5f1,#caa5f1,#fac0e1,#fac0e1, #d2fafb);*/
    font-family: 'Patua One', cursive;
 }
+body::-webkit-scrollbar{
+    width: 10px  ;
+    background: #f1def3;
+    
+}
+body::-webkit-scrollbar-thumb{
+    background: linear-gradient( #1c1c1c, BLACK,#1c1c1c);
+    
+}
    .header{
        background: #39bdc8;
        width: 100%;
@@ -57,7 +66,22 @@ body{
    }
    .login_contenedor-form label{
        font-size: 14px;
-   }
+   }/*------------------------------------------------------------------------pulse--------------------*/
+   @keyframes label {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.1);}
+    100% {transform: scale(1);}
+  }
+  .label {
+    animation-name: label;
+    animation-duration: 3s;
+  }
+  /*.animated { /*** -----------------Animacion *--------------------
+    animation-duration: 2.5s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+  }*/
+/********************---------------------------------------*****************************/
    .login__contenedor-renombrar{
        display: flex;
        color: white;
@@ -72,6 +96,10 @@ body{
    }
    .login__contenedor-renombrar a:hover{
     text-decoration: underline;
+    
+    animation-duration: 2.5s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
     
    }
    .login__contenedor-social-media > div{ /*el > selecciona todas las propiedades, en este caso los div, para estilizarlos*/
@@ -169,8 +197,10 @@ body{
         width: 100%;
     }
     .footer{
-        align-items: flex-start;
+        padding-top: 10px;
+        align-items: center;
         flex-direction: column;
+      
     }
     footer a{
         margin-top: 5px;
