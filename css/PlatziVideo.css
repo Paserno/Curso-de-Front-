@@ -81,6 +81,7 @@ body{
         height: 50px;
         padding: 0px 20px;
         width: 70%;
+        outline: none; /*elimina la seleccion o borde del buscador*/
     }
     ::placeholder{
         color: white;
@@ -148,4 +149,20 @@ body{
        left: 0;
        right: 0;
        bottom: 0;
+    }
+    /*--------------------------------------------------------------------------------*/
+    .login{
+        height: 900px;
+        width: 100%;
+    }
+    .login__input{
+        background-color: rgba(255, 255, 255, 0.289);
+        border: 2px solid white;
+        border-radius: 20px; /*REDONDEAR EL BORDE*/
+        color: white;
+        font-family: 'Patua One', cursive;
+        font-size: 16px;
+       
+        padding: 0px 20px;
+        
     }
