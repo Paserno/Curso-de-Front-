@@ -69,7 +69,7 @@ body::-webkit-scrollbar-thumb{
    }/*------------------------------------------------------------------------pulse--------------------*/
    @keyframes label {
     0% {transform: scale(1);}
-    50% {transform: scale(1.1);}
+    50% {transform: scale(1.6);}
     100% {transform: scale(1);}
   }
   .label {
@@ -185,6 +185,25 @@ body::-webkit-scrollbar-thumb{
     color: #fac0e1;
 
     text-decoration: underline;
+}
+.Error{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+   
+    color: white;
+    
+}
+.Error h2{
+    font-size: 80px;
+    margin-bottom: 5px;
+    animation-duration: 2.5s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+}
+.Error p{
+    font-size:20px; 
+    margin-top: 2px;
 }
 @media only screen and (max-width: 600px){
     .login__contenedor{

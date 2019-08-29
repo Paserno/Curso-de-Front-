@@ -30,6 +30,7 @@ body::-webkit-scrollbar-thumb{
    
     .header__menu{
         margin-right: 30px;
+
         
     }
     .header__menu ul{
@@ -40,6 +41,7 @@ body::-webkit-scrollbar-thumb{
        width: 100px;
        text-align: right;
        margin: 0px 0px 0px -14px;
+       
     }/*-----------------EFECTO DE DESPLIEGUE :O ---------------------------------------*/
     .header__menu:hover ul, ul:hover{
         display: block;
@@ -147,14 +149,14 @@ body::-webkit-scrollbar-thumb{
         transition: 700ms all; /*Aqui tenemos el tiempo de transicion*/
         transform-origin: right left;
         position:  absolute;
-        
+        z-index: 1;
     }
     .carrusel__item:hover .carrusel__item-img{
         transform: scale(1.2);/*Aumenta tamaño*/
         opacity: 1;
     }
     /*---------------------------------------*/
-    .carrusel__item-detalle{
+    .carrusel__item-detalle{ /*     Aqui es con dos __ no con _ 1*/
         background: linear-gradient(to top, rgba(0, 0, 0, 0.9)0%, rgba(0, 0, 0, 0) 100%);/*Desbanecimiento :O*/
        font-size: 10px;
        opacity: 1;
@@ -165,7 +167,21 @@ body::-webkit-scrollbar-thumb{
        left: 0;
        right: 0;
        bottom: 0;
+       z-index: 3;
+       margin-top: 50px
     }
+    .carrusel_item-detalle-p{
+        display: flex;
+    flex-direction: column;
+    color: white;
+    }
+    .carrusel_item-detalle img{ /*     Aqui es con un _ no con __*/
+        width: 30px;
+        padding-top: 50%;
+    
+
+    }
+   
     /*--------------------------------------------------------------------------------*/
     .login{
         height: 900px;
